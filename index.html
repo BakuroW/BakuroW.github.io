@@ -22,31 +22,28 @@
     <link href="/css/blog.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div ng-include="'menu/menu.html'"></div>
+  <div ng-include="'/js/app/controllers/menu/menu.html'"></div>
   <div ng-view></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="app/bower_components/angular/angular.js"></script>
-  <script src="app/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
   <!--Firebase scripts-->
   <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
   <script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
   <!--Firebase scripts-->
-  <script src="app/app.js"></script>
-  <script src="app/services/menu.js"></script>
-  <script src="app/menu/menu.js"></script>
-  <script src="app/directives/scroll-event.js"></script>
-  <script src="app/home/home.js"></script>
-  <script src="app/register/register.js"></script>
-  <script src="app/welcome/welcome.js"></script>
-  <script src="app/addPost/addPost.js"></script>
-  <script src="app/components/version/version.js"></script>
-  <script src="app/components/version/version-directive.js"></script>
-  <script src="app/components/version/interpolate-filter.js"></script>
-  <script src="app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="/js/app/app.js"></script>
+  <script src="/js/app/services/menu.js"></script>
+  <script src="/js/app/directives/scroll-event.js"></script>
+  <script src="/js/app/controllers/menu/menu.js"></script>
+  <script src="/js/app/controllers/home/home.js"></script>
+  <script src="/js/app/controllers/register/register.js"></script>
+  <script src="/js/app/controllers/welcome/welcome.js"></script>
+  <script src="/js/app/controllers/addPost/addPost.js"></script>
+  <script src="/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 
 </body>
 </html>

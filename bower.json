@@ -1,15 +1,20 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
+  "name": "stas-seed",
+  "description": "test",
+  "version": "0.0.1",
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "angular": "1.2.x",
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
-  }
+    "html5-boilerplate": "~4.3.0",
+    "firebase": "2.2.3",
+    "angularfire": "1.0.0",
+    "firebase-simple-login": "1.6.4"
+  },
+  "authors": [
+    "stas <bakurow@list.ru>"
+  ]
 }
