@@ -1,0 +1,83 @@
+
+<div class="slide_1_reg" ng-controller="RegisterCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form class="form-signin" name="regForm" ng-class="{ 'has-error' : regForm.email.$invalid }">
+                    <!--с помощью ng-class подсвечиваем форму которая не прошла валидацию-->
+                    <h1 class="text-center">Registration</h1>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Enter email:">
+
+                        <p style="color:red;" ng-show="regForm.email.$invalid">Enter a valid email.</p>
+                        <!--we'll use ngShow to show the validation message when the input email has invalid data-->
+
+                    </div>
+                    <div class="form-group" ng-class="{ 'has-error' : regForm.password.$invalid }">
+                        <label>Password:</label>
+                        <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="6" placeholder="Enter password:">
+                        <!--ng-minlength предназначен для обозначения минимальной длины инпута-->
+                        <p style="color:red;" ng-show="regForm.password.$error.minlength">Min password length is 6 characters.</p>
+                        <p style="color:red;" ng-show="regError">{{regErrorMessage}}</p>
+                    </div>
+                    <label class="checkbox">
+                        <a href="#/home">Sign In</a>
+                    </label>
+                    <button type="button" ng-click="signUp()" ng-disabled="!user.email || !user.password" class="btn btn-success btn-block">
+                        Register
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide_video">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center" style="color:#000000">Some information:</h1>
+<!--
+            <iframe width="760" height="515" src="https://www.youtube.com/embed/STRPsW6IY8k" frameborder="0" allowfullscreen></iframe>
+-->
+        </div>
+    </div>
+</div>
+
+<div class="slide_2" >
+    <div class="container">
+
+    </div>
+</div>
+
+<div class="footer" >
+    <div class="container">
+        <div class="wrap center">
+            <ul class="hr">
+                <li>
+                    <a class="h-mail" target="_blank" href="mailto:bakurow@list.ru">
+                        <i class="fa fa-envelope"></i>
+                        bakurow@list.ru
+                    </a>
+                </li>
+                <li>
+                    <a class="h-skype" href="skype:stassss57">
+                        <i class="fa fa-skype"></i>
+                        stassss57
+                    </a>
+                </li>
+                <li>
+                    <a class="h-phone">
+                        <i class="fa fa-phone"></i>
+                        +38 (050) 512-70-68
+                    </a>
+                </li>
+            </ul>
+                <span class="copy">
+                    2015
+                </span>
+        </div>
+    </div>
+</div>
+

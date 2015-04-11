@@ -1,0 +1,141 @@
+.slide_1 {
+    height: 100vh; /* Высота блока */
+    background: url('/images/desck.jpg') no-repeat fixed center top / cover transparent; /* Добавляем фон */
+    background-size: cover;
+
+}
+.slide_1_reg {
+    height: 100vh; /* Высота блока */
+    background: url('/images/desck.jpg') no-repeat fixed center top / cover transparent; /* Добавляем фон */
+    background-size: cover;
+
+}
+
+.slide_2 {
+    height: 100vh; /* Высота блока */
+    background-color: #ffffff; /* Добавляем фон */
+    background-size: cover;
+}
+.slide_1 .row {
+    margin-top: calc(50vh - 126px);
+}
+.slide_1_reg .row {
+    margin-top: calc(50vh - 126px);
+}
+.slide_1 form {
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;
+    color: #6060c0;
+}
+.slide_1_reg form {
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;
+    color: #64c00d;
+}
+
+h1 {
+   font-family: Ubuntu, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+
+
+/*Footer starts*/
+.footer {
+    /*//font-family: "OpenSansRegular"*/
+    height: 37vh; /* Высота блока */
+    background: url('/images/footer-5.png') 100% no-repeat; /* Добавляем фон */
+    background-size: cover;
+}
+.center {
+    text-align: center;
+
+
+}
+.wrap {
+/*    width: 1200px;*/
+    margin: 0px auto;
+}
+.footer.ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}
+
+.hr {
+    /*margin: 0; *//* Обнуляем значение отступов */
+    /*padding: 4px;*//* Значение полей *//*
+    margin-top: 200px;*/
+    margin-top: 140px;
+}
+.footer li {
+    display: inline-block;
+}
+
+
+.footer .h-mail {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+    font-size: 160%;
+
+    color: #F49A3C;
+    line-height: 20px;
+    margin-right: 65px;
+    text-decoration: none;
+
+}
+.footer .h-skype {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+    font-size: 160%;
+
+
+    color: #0077b3;
+    line-height: 20px;
+    margin-right: 65px;
+    text-decoration: none;
+}
+
+.footer .h-phone {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+    font-size: 160%;
+
+    color: #ffffff;
+    line-height: 20px;
+    margin-right: 65px;
+    text-decoration: none;
+}
+.copy {
+    display: block;
+    color: #FFF;
+   /* padding: 150px 0px 25px;*/
+    margin-top: 50px;
+    text-align: center;
+
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-feature-settings: normal;
+    font-language-override: normal;
+    font-kerning: auto;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-size: inherit;
+    text-rendering: auto;
+    transform: translate(0px, 0px);
+}
+/*footer ends*/
+
+/*video starts*/
+.slide_video {
+    height: 100vh; /* Высота блока */
+    background: url("/images/wood.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    color: #ffe430;
+}
