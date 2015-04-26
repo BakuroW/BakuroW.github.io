@@ -20,7 +20,6 @@ angular.module('myApp', [
                 requireBase: false
             });
         }
-
         $routeProvider.
             when('/addPost', {templateUrl: '/js/app/controllers/addPost/addPost.html',  controller: 'AddPostCtrl'}).
             when('/welcome', {templateUrl: '/js/app/controllers/welcome/welcome.html',  controller: 'WelcomeCtrl'}).
@@ -29,18 +28,3 @@ angular.module('myApp', [
             otherwise(       {redirectTo:  '/home'});//вид по умолчанию
         /*$locationProvider.html5Mode(true);*/
     }]);
-
-
-/*
-angular.module('phonecat', []).
-    config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-
-        $routeProvider.
-            when('/phones', {templateUrl: 'partials/phone-list.html',   controller: PhoneListCtrl}).
-            when('/phones/:phoneId', {templateUrl: 'partials/phone-detail.html', controller: PhoneDetailCtrl}).
-            otherwise({redirectTo: '/phones'});
-
-        $locationProvider.html5Mode(true);
-
-    }]);*/
-/*Test html 5 mod*/
